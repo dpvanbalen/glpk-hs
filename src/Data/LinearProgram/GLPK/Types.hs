@@ -8,7 +8,6 @@ import Control.Monad.Trans (MonadIO (..))
 import Control.Monad (ap)
 
 import Foreign.Ptr
-import Foreign.ForeignPtr
 
 foreign import ccall unsafe "c_glp_create_prob" glpCreateProb :: IO (Ptr GlpProb)
 foreign import ccall unsafe "c_glp_delete_prob" glpDelProb :: Ptr GlpProb -> IO ()

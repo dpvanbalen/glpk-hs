@@ -2,7 +2,6 @@
 module Data.LinearProgram.Types (LinFunc, VarKind(..), Direction(..), Bounds(..)) where
 
 import Control.DeepSeq
-import Data.Monoid
 import GHC.Generics
 import Data.Map
 

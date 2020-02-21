@@ -1,5 +1,5 @@
 Name:           glpk-hs
-Version:        0.7
+Version:        0.7.1
 Author:         Louis Wasserman
 License:        BSD3
 License-file:   LICENSE
@@ -42,7 +42,7 @@ library
                     Control.Monad.LPMonad,
                     Control.Monad.LPMonad.Supply,
                     Control.Monad.LPMonad.Supply.Class
-  Other-modules:    Data.LinearProgram.GLPK.Internal,	
+  Other-modules:    Data.LinearProgram.GLPK.Internal,  
                     Data.LinearProgram.GLPK.Types,
                     Data.LinearProgram.GLPK.Common,
                     Data.LinearProgram.GLPK.IO.Internal,
