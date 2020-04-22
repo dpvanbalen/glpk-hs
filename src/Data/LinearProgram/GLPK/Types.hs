@@ -44,6 +44,9 @@ instance Applicative GLPK where
 instance MonadIO GLPK where
         liftIO m = GLP (const m)
 
+instance MonadFail GLPK where
+  fail = error
+
 data MsgLev = MsgOff | MsgErr | MsgOn | MsgAll deriving (Eq, Enum, Read, Show)
 data BranchingTechnique = FirstFrac | LastFrac | MostFrac | DrTom | HybridP deriving (Eq, Enum, Read, Show)
 data BacktrackTechnique = DepthFirst | BreadthFirst | LocBound | ProjHeur deriving (Eq, Enum, Read, Show)
